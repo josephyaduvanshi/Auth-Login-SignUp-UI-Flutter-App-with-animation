@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:money_management_app/Pages/forgot_password.dart';
 import 'package:money_management_app/Pages/home_page.dart';
 import 'package:money_management_app/Pages/login_page.dart';
@@ -19,14 +20,22 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       initialRoute: '/login',
-      routes: {
-        MyRoutes.loginRoute: (context) => LoginPage(),
-        MyRoutes.signUp: (context) => SignUpPage(),
-        MyRoutes.homePage: (context) => HomePage(),
-        MyRoutes.forgotPassword: (context) => ForgotPassword(),
-      },
+      // routes: {
+      //   MyRoutes.loginRoute: (context) => LoginPage(),
+      //   MyRoutes.signUp: (context) => SignUpPage(),
+      //   MyRoutes.homePage: (context) => HomePage(),
+      //   MyRoutes.forgotPassword: (context) => ForgotPassword(),
+      // },
+            getPages: [
+        GetPage(name: '/login', page: () => LoginPage(), transition: Transition.cupertino,),
+        GetPage(name: '/signUp', page: () => SignUpPage(), transition: Transition.cupertino,),
+        GetPage(name: '/homePage', page: () => HomePage(),
+            transition: Transition.cupertino),
+        GetPage(name: '/forgotPassword', page: () => ForgotPassword(),
+            transition: Transition.cupertino),
+      ],
     );
   }
 }
