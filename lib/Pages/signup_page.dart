@@ -307,7 +307,7 @@ class _SignUpPageState extends State<SignUpPage> {
           case "user-disabled":
             errorMessage = "User with this email has been disabled.";
             break;
-             case "ERROR_OPERATION_NOT_ALLOWED":
+          case "ERROR_OPERATION_NOT_ALLOWED":
             errorMessage = "Anonymous accounts are not enabled";
             break;
           case "ERROR_WEAK_PASSWORD":

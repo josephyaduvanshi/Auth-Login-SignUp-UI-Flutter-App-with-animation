@@ -14,7 +14,6 @@ Future<void> main() async {
   runApp(MyApp());
 }
 
-
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
@@ -28,12 +27,24 @@ class MyApp extends StatelessWidget {
       //   MyRoutes.homePage: (context) => HomePage(),
       //   MyRoutes.forgotPassword: (context) => ForgotPassword(),
       // },
-            getPages: [
-        GetPage(name: '/login', page: () => LoginPage(), transition: Transition.cupertino,),
-        GetPage(name: '/signUp', page: () => SignUpPage(), transition: Transition.cupertino,),
-        GetPage(name: '/homePage', page: () => HomePage(),
+      getPages: [
+        GetPage(
+          name: '/login',
+          page: () => LoginPage(),
+          transition: Transition.cupertino,
+        ),
+        GetPage(
+          name: '/signUp',
+          page: () => SignUpPage(),
+          transition: Transition.cupertino,
+        ),
+        GetPage(
+            name: '/homePage',
+            page: () => HomePage(),
             transition: Transition.cupertino),
-        GetPage(name: '/forgotPassword', page: () => ForgotPassword(),
+        GetPage(
+            name: '/forgotPassword',
+            page: () => ForgotPassword(),
             transition: Transition.cupertino),
       ],
     );
