@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "107970303037",
+    "project_id": "moneymanagement-prabandhak-app",
+    "storage_bucket": "moneymanagement-prabandhak-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107970303037:android:fa3c1c15340e6e9d9d4654",
+        "android_client_info": {
+          "package_name": "com.example.money_management_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107970303037-cuacj6q4vjpno5qgo27g443fg4rslfgp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.money_management_app",
+            "certificate_hash": "7a91becff74583f5b92861a4f0653bba1b4c0f4c"
+          }
+        },
+        {
+          "client_id": "107970303037-fhkhh8s8vbiejsd9vchk3j465jsev1jp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDF4Onlo1d6Ea6vgEv3qT8KUaeitx7W0Y8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107970303037-fhkhh8s8vbiejsd9vchk3j465jsev1jp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
